@@ -1,12 +1,24 @@
 import './App.css';
+import Clients from './components/Clients';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import Services from './components/Services';
+import Team from './components/Team';
+import WhyUs from './components/WhyUS';
+import News from './components/News';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App bg-trustGray h-screen">
-      <div className='text-3xl font-bold underline p-10 bg-trustBlue'>
-
-      this is a react app with tailwind 
-      </div>
+    <div className="App">
+      <Navbar />
+      <Hero />
+      <WhyUs />
+      <Services />
+      <Team />
+      <Clients />
+      <News />
+      <Footer />
     </div>
   );
 }
