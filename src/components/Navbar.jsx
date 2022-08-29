@@ -5,14 +5,14 @@ import cn from "classnames";
 const Navbar = () => {
   const [open, setOpen] = useState(true);
   return (
-    <nav className="bg-black text-white flex px-4 sm:py-4 md:px-24 items-center justify-around">
+    <nav className="bg-transparent relative text-white flex px-4 sm:py-4 md:px-24 items-center justify-around">
       <div className="bar sm:hidden" onClick={() => setOpen(true)}>
         Open
       </div>
       <div
         className={cn(
-          "nav-items transition-all transform absolute sm:static w-full bg-black flex flex-col-reverse sm:flex-row justify-end md:justify-evenly items-center pt-16 sm:py-0 sm:px-4 text-xm sm:justify-between",
-          open === false ? " -top-full " : "top-0"
+          "nav-items transition-all transform absolute sm:static bg-black sm:bg-transparent w-full flex flex-col-reverse sm:flex-row justify-end md:justify-evenly items-center pt-16 sm:py-0 sm:px-4 text-xm sm:justify-between",
+          open === false ? "very-top" : "top-0"
         )}
       >
         <div
