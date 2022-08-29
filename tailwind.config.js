@@ -13,6 +13,7 @@ module.exports = {
         trustTextGray: "#9B9B9B", // The Gray text
         trustTextGray2: "#4f4f4f", // The Gray text
         boxGray: "#f8f8f8", // The Gray for services Boxs
+        lightBlack: "#131414",
       },
     },
     fontFamily: {
