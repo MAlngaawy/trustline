@@ -24,8 +24,8 @@ const Navbar = () => {
         >
           Close
         </div>
-        <div className="lang font-bold my-2">ENG</div>
-        <div className="login my-4 bg-trustGray rounded-3xl text-black px-6 h-fit">
+        <div className="lang font-bold my-2 cursor-pointer">ENG</div>
+        <div className="login my-4 bg-trustGray rounded-3xl text-black px-6 h-fit cursor-pointer">
           دخول
         </div>
         <ul className="links flex justify-between flex-col sm:flex-row">

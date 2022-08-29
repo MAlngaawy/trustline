@@ -10,6 +10,7 @@ module.exports = {
         trustBlue4: "#763BBF", //Purple
         trustBlue5: "#351D4F", //Dark Purple
         trustGray: "#F5F5F5", // The Gray Background
+        trustTextGray: "#9B9B9B", // The Gray text
       },
     },
     fontFamily: {
@@ -18,6 +19,7 @@ module.exports = {
     screens: {
       sm: "600px", // => @media (min-width: 600px)
       md: "800px", // => @media (min-width: 800px)
+      lg: "1024px", // => @media (min-width: 1024px)
     },
   },
   plugins: [],
