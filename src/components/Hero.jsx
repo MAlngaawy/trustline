@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="py-72 px-4 m-auto relative text-white flex flex-col justify-center items-center">
+    <div className="py-36 sm:py-56 px-4 m-auto relative text-white flex flex-col justify-center items-center">
       <h2 className=" text-2xl sm:text-5xl font-bold my-4">
         ترست لاين تقدم لأعمالك الحماية{" "}
       </h2>

@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
       <div
         className={cn(
-          "nav-items transition-all transform absolute sm:static bg-black sm:bg-transparent w-full flex flex-col-reverse sm:flex-row justify-end md:justify-evenly items-center pt-16 sm:py-0 sm:px-4 text-xm sm:justify-between",
+          "nav-items transition-all transform absolute z-10 sm:static bg-black sm:bg-transparent w-full flex flex-col-reverse sm:flex-row justify-end md:justify-evenly items-center pt-16 sm:py-0 sm:px-4 text-xm sm:justify-between",
           open === false ? "very-top" : "top-0"
         )}
       >
