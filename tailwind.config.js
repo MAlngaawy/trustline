@@ -11,6 +11,7 @@ module.exports = {
         trustBlue5: "#351D4F", //Dark Purple
         trustGray: "#F5F5F5", // The Gray Background
         trustTextGray: "#9B9B9B", // The Gray text
+        boxGray: "#f8f8f8", // The Gray for services Boxs
       },
     },
     fontFamily: {
