@@ -3,7 +3,7 @@ import { ReactComponent as Logo } from "./assets/logo.svg";
 import cn from "classnames";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <nav className="bg-transparent relative text-white flex px-4 sm:py-4 md:px-24 items-center justify-around">
       <div className="bar sm:hidden" onClick={() => setOpen(true)}>
