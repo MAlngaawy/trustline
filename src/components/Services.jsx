@@ -37,25 +37,64 @@ const data = [
 const Services = () => {
   console.log(data.length);
   return (
-    <div className="services py-20 relative">
-      <div className="overlay absolute top-0 h-1/2 w-full bg-black -z-10"></div>
-      <div className="container bg-white rounded-2xl mx-auto text-right shadow-md p-2 md:p-16 lg:p-32 grid md:grid-cols-2 grid-flow-row-dense">
-        <div className="heading m-10 md:order-1">
-          <Shape />
-          <h3 className="header font-bold text-3xl my-2">الخدمات والحلول</h3>
-          <p className="des text-sm ">
-            نقدم خدمات وحلول احترافية في مجال الأمن السيبراني
-          </p>
+    <div className="services py-20 relative p-2">
+      <div className="overlay absolute top-0 left-0 h-1/2 w-full bg-black -z-10"></div>
+      <div className="container bg-white rounded-2xl sm:mx-auto text-right shadow-md py-20 px-4 sm:px-10">
+        <div className="first lg:mx-10 flex flex-col items-center justify-center gap-5 md:flex-row-reverse">
+          <div className="heading p-6 md:w-1/2">
+            <Shape />
+            <h3 className="header font-bold text-3xl my-2">الخدمات والحلول</h3>
+            <p className="des text-sm ">
+              نقدم خدمات وحلول احترافية في مجال الأمن السيبراني
+            </p>
+          </div>
+          {/* {data.map((service, index) => ( */}
+          <div className="md:w-1/2">
+            <SingleService
+              key={data[0].title}
+              shape={data[0].shape}
+              title={data[0].title}
+              des={data[0].des}
+            />
+          </div>
         </div>
-        {data.map((service, index) => (
-          <SingleService
-            key={service.title}
-            shape={service.shape}
-            title={service.title}
-            des={service.des}
-            index={index}
-          />
-        ))}
+        <div className="second lg:mx-10 flex flex-col items-center justify-center gap-5 md:flex-row-reverse">
+          <div className="md:w-1/2">
+            <SingleService
+              key={data[1].title}
+              shape={data[1].shape}
+              title={data[1].title}
+              des={data[1].des}
+            />
+          </div>
+          <div className="md:w-1/2">
+            <SingleService
+              key={data[2].title}
+              shape={data[2].shape}
+              title={data[2].title}
+              des={data[2].des}
+            />
+          </div>
+        </div>
+        <div className="Third lg:mx-10 flex flex-col items-center justify-center gap-5 md:flex-row-reverse">
+          <div className="md:w-1/2">
+            <SingleService
+              key={data[3].title}
+              shape={data[3].shape}
+              title={data[3].title}
+              des={data[3].des}
+            />
+          </div>
+          {/* {data.map((service, index) => ( */}
+          <div className="md:w-1/2">
+            <SingleService
+              key={data[4].title}
+              shape={data[4].shape}
+              title={data[4].title}
+              des={data[4].des}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -63,10 +102,10 @@ const Services = () => {
 
 export default Services;
 
-const SingleService = ({ shape, title, des, index }) => {
+const SingleService = ({ shape, title, des }) => {
   return (
     <div
-      className={`single bg-boxGray p-4 md:p-10 m-2 flex flex-row-reverse justify-between rounded-md order-${index}`}
+      className={`single bg-boxGray p-4 md:p-6 m-2 flex flex-row-reverse justify-between rounded-md`}
     >
       <div className="flex flex-col justify-center items-center text-center w-3/12">
         <div className="shape">
