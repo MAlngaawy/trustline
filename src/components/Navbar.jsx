@@ -5,13 +5,13 @@ import cn from "classnames";
 const Navbar = () => {
   const [open, setOpen] = useState(true);
   return (
-    <nav className="bg-black text-white flex sm:py-4 md:px-24 items-center justify-around">
+    <nav className="bg-black text-white flex px-4 sm:py-4 md:px-24 items-center justify-around">
       <div className="bar sm:hidden" onClick={() => setOpen(true)}>
         Open
       </div>
       <div
         className={cn(
-          "nav-items transition-all transform absolute sm:static w-full bg-black flex flex-col-reverse sm:flex-row justify-end items-center pt-16 sm:py-0 sm:px-4 text-xm sm:justify-between",
+          "nav-items transition-all transform absolute sm:static w-full bg-black flex flex-col-reverse sm:flex-row justify-end md:justify-evenly items-center pt-16 sm:py-0 sm:px-4 text-xm sm:justify-between",
           open === false ? " -top-full " : "top-0"
         )}
       >
@@ -45,5 +45,7 @@ const Navbar = () => {
 export default Navbar;
 
 const Li = ({ text }) => {
-  return <li className="mx-4 my-2 medium:text-sm cursor-pointer">{text}</li>;
+  return (
+    <li className="mx-4 sm:mx-2 my-2 sm:text-sm cursor-pointer">{text}</li>
+  );
 };
