@@ -5,3 +5,12 @@
 .very-top {
   top: -1000%;
 }
+
+.swiper-wrapper {
+  align-items: center !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #842eb3 !important;
+}
