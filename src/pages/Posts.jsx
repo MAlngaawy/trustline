@@ -27,7 +27,7 @@ export const Posts = () => {
           HomePage
         </Link>
       </div>
-      <div className="content">
+      <div className="content mx-4">
         <div className="container mx-auto flex justify-center items-center flex-col">
           <button onClick={() => fetchData()}>Click To fetch data</button>
           {data ? (
@@ -48,7 +48,7 @@ export const Posts = () => {
 const SinglePost = ({ title, id }) => {
   return (
     <div className="single my-4 border border-black hover:bg-gray-400 rounded-md w-full  ">
-      <Link className="text-left flex " to={`/${id}`}>
+      <Link className="text-left flex " to={`/posts/${id}`}>
         <div className="post-num p-4 bg-black text-white w-fit">{id}</div>
         <h3 className="font-bold p-4">{title}</h3>
       </Link>

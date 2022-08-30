@@ -2,8 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Posts } from "./pages/Posts";
-import { useEffect } from "react";
-import { useStateContext } from "./contexts/ContextProvider";
+import { SinglePost } from "./pages/SinglePost";
 
 function App() {
   // const { setData } = useStateContext();
@@ -20,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/posts" element={<Posts />} />
+        <Route path="/posts/:id" element={<SinglePost />} />
       </Routes>
     </div>
   );
