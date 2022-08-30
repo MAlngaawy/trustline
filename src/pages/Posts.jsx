@@ -35,7 +35,7 @@ export const Posts = () => {
       <div className="content mx-4">
         <div className="container mx-auto flex justify-center items-center flex-col">
           <button className=" border p-4" onClick={() => fetchData()}>
-            Click To fetch data from the server
+            Click To fetch the (Original) data from the server
           </button>
           <AddPost
             setNewPost={setNewPost}
