@@ -35,7 +35,6 @@ const data = [
 ];
 
 const Services = () => {
-  console.log(data.length);
   return (
     <div className="services py-20 relative p-2">
       <div className="overlay absolute top-0 left-0 h-1/2 w-full bg-black -z-10"></div>

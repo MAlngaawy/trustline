@@ -17,7 +17,6 @@ const Clients = () => {
   useEffect(() => {
     window.addEventListener("resize", () => {
       setWindowWidth(window.innerWidth);
-      console.log(windowWidth);
     });
   }, [windowWidth]);
 

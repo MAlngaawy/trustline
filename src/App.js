@@ -16,7 +16,7 @@ function App() {
         className="top-section relative"
         style={{ backgroundImage: `url(${dark})` }}
       >
-        <div className="absolute top-0 left-0 h-full w-full bg-black opacity-90"></div>
+        <div className="absolute top-0 left-0 h-full w-full bg-black opacity-60 md:opacity-80"></div>
         <Navbar />
         <Hero />
       </div>

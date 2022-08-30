@@ -19,7 +19,6 @@ const Navbar = () => {
           className="close absolute left-10 top-5 sm:hidden"
           onClick={() => {
             setOpen(false);
-            console.log("clicked", open);
           }}
         >
           Close
