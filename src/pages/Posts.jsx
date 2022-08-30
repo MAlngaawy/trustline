@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useStateContext } from "../contexts/ContextProvider";
 import { useState } from "react";
-import { data } from "autoprefixer";
 
 export const Posts = () => {
   const { data, setData } = useStateContext();
