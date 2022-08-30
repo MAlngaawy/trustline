@@ -6,14 +6,14 @@ import { useEffect } from "react";
 import { useStateContext } from "./contexts/ContextProvider";
 
 function App() {
-  const { setData } = useStateContext();
+  // const { setData } = useStateContext();
 
-  useEffect(() => {
-    console.log("Effect");
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((res) => res.json())
-      .then((data) => setData(data));
-  }, [setData]);
+  // useEffect(() => {
+  //   console.log("Effect");
+  //   fetch("https://jsonplaceholder.typicode.com/posts")
+  //     .then((res) => res.json())
+  //     .then((data) => setData(data));
+  // }, [setData]);
 
   return (
     <div className="App font-tajwal">

@@ -2,7 +2,13 @@ import { Link } from "react-router-dom";
 import { useStateContext } from "../contexts/ContextProvider";
 
 export const Posts = () => {
-  const { data } = useStateContext();
+  const { data, setData } = useStateContext();
+
+  const fetchData = () => {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  };
 
   return (
     <div className="posts">
@@ -23,9 +29,16 @@ export const Posts = () => {
       </div>
       <div className="content">
         <div className="container mx-auto flex justify-center items-center flex-col">
-          {data.map((item) => {
-            return <SinglePost title={item.title} id={item.id} />;
-          })}
+          <button onClick={() => fetchData()}>Click To fetch data</button>
+          {data ? (
+            data.map((item) => {
+              return <SinglePost title={item.title} id={item.id} />;
+            })
+          ) : (
+            <div className="text-2xl my-4 font-medium">
+              Click The button above to fetch data
+            </div>
+          )}
         </div>
       </div>
     </div>
