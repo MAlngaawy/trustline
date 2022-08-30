@@ -29,13 +29,15 @@ export const Posts = () => {
       </div>
       <div className="content mx-4">
         <div className="container mx-auto flex justify-center items-center flex-col">
-          <button onClick={() => fetchData()}>Click To fetch data</button>
+          <button onClick={() => fetchData()}>
+            Click To fetch data from the server
+          </button>
           {data ? (
             data.map((item) => {
               return <SinglePost title={item.title} id={item.id} />;
             })
           ) : (
-            <div className="text-2xl my-4 font-medium">
+            <div className="text-2xl my-4 font-medium border">
               Click The button above to fetch data
             </div>
           )}
