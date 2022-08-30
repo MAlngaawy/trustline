@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ReactComponent as Logo } from "./assets/logo.svg";
 import cn from "classnames";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -25,7 +26,7 @@ const Navbar = () => {
         </div>
         <div className="lang font-bold my-2 cursor-pointer">ENG</div>
         <div className="login my-4 bg-trustGray rounded-3xl text-black px-6 h-fit cursor-pointer">
-          دخول
+          <Link to="/posts">دخول</Link>
         </div>
         <ul className="links flex justify-between flex-col sm:flex-row">
           <Li text="ترست لاين" />

@@ -41,8 +41,8 @@ const Clients = () => {
       >
         {data.map((item, index) => {
           return (
-            <SwiperSlide>
-              <SlideItem className="m-60" img={item} key={index} />
+            <SwiperSlide key={index}>
+              <SlideItem className="m-60" img={item} />
             </SwiperSlide>
           );
         })}
