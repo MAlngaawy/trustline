@@ -25,9 +25,11 @@ const Navbar = () => {
           Close
         </div>
         <div className="lang font-bold my-2 cursor-pointer">ENG</div>
-        <div className="login my-4 bg-trustGray rounded-3xl text-black px-6 h-fit cursor-pointer">
-          <Link to="/posts">دخول</Link>
-        </div>
+        <Link to="/posts">
+          <div className="login my-4 bg-trustGray rounded-3xl text-black px-6 h-fit cursor-pointer">
+            دخول
+          </div>
+        </Link>
         <ul className="links flex justify-between flex-col sm:flex-row">
           <Li text="ترست لاين" />
           <Li text="لماذا ترست لاين ؟" />
